@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body {
+  background-image: url('./backgrounds/clear.jpeg');
+  height: 800px; 
+  background-position: 0%; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.rain{
+  background-image: url('./backgrounds/rain.jpeg');
+  height: 830px; 
+  background-position: 0%; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cloudy{
+  background-image: url('./backgrounds/cloud.jpeg');
+  height: 830px; 
+  background-position: 0%; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+.city{
+  background-image: url('./backgrounds/city.jpeg');
+  height: 830px; 
+  background-position: 0%; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+.search-btn{
+  background-color: blanchedalmond;
+  width: 5%;
+  margin-top: 40px;
+  height: 35px;
+  border-radius: 0px 3px ;
+  border-left: none;
+  border-color: rgb(17, 17, 16);
+}
+
+
+.input{
+ background-color: blanchedalmond;
+ border-color: white;
+ width: 45%;
+ margin-top: 40px;
+ border-right: none;
+ height : 30px;
+}
+
+.header-container{
+  display: flex;
+  justify-content: center;
+}
+
+.result{
+  display: flex;
+  justify-content: center;
+}
+
+.inner-result{
+  border: 1px solid white;
+  border-radius: 5%;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.inner-result h1{
+  font-size: 1.25rem;
+}
+
+
+.result-card{
+  border: 1px solid red;
+  width: 300px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+}
+
+
+.card {
+  border: 3px solid white;
+  border-bottom: 1.5px solid white ;
+  background-color:black;
+  width: 400px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   color: white;
+  font-family: 'Libre Baskerville', serif;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-card{
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-card h1{
+   font-family: 'Libre Baskerville', serif;
+}
+
+.middle-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.celsius{
+  position: relative;
+  bottom: 22px;
+}
+
+.top-card{
+  display: flex;
+}
+.Sunny{
+  color: rgb(239, 243, 14);
+}
+.not-sunny{
+  color: rgb(24, 171, 216);
+}
+.temps{
+  font-size: 3.5rem;
+}
+
+
+.main-footer{
+ 
+}
+
+.btn-main{
+  width: 407px;
+  height: 50px;
+  background-color:black;
+  background-repeat:no-repeat;
+  cursor:pointer;
+  overflow: hidden;
+  border-radius: 20px;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+  border-top: none;
+  border: 3px solid white;
+  border-color: white;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+.card-container{
+
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
